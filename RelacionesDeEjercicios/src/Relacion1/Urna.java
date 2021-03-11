@@ -1,4 +1,4 @@
-package Relacion1.Urna;
+package Relacion1;
 
 public class Urna {
 

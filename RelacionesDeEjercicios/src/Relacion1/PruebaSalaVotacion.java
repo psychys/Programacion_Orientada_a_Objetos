@@ -1,4 +1,4 @@
-package Relacion1.SalaVotacion;
+package Relacion1;
 
 public class PruebaSalaVotacion {
 

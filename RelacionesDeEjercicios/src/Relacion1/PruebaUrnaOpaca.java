@@ -1,6 +1,4 @@
-package Relacion1.UrnaOpaca;
-
-import Relacion1.Urna.Urna; //Este import solo es necesario por la mecánica de trabajo que YO estoy siguiendo.
+package Relacion1;
 
 public class PruebaUrnaOpaca {
 

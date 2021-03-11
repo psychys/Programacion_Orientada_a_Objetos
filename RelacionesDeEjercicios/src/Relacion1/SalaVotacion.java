@@ -1,6 +1,4 @@
-package Relacion1.SalaVotacion;
-
-import Relacion1.Urna.Urna;
+package Relacion1;
 
 public class SalaVotacion {
 

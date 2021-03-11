@@ -1,6 +1,5 @@
-package Relacion1.UrnaOpaca;
+package Relacion1;
 
-import Relacion1.Urna.Urna;
 
 public class UrnaOpaca extends Urna{
 
