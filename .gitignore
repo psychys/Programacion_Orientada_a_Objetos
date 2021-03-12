@@ -1,13 +1,7 @@
 /.metadata/
-<<<<<<< HEAD
-~/.settings/*
-~/*.classpath*
-~/*.project*
-~/*bin/
-=======
 **/.classpath
 **/.gitignore
 **/.project
 **/.settings/
 **/bin/
->>>>>>> 431bba208d1383d7ab4431e7e44163f386d39c68
+
