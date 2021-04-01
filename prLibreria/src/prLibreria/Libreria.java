@@ -17,6 +17,7 @@ public class Libreria {
 	
 	public Libreria(int capacidad) {
 		numLibs = 0;
+		if(capacidad <= 0) throw new RuntimeException("Capacidad negativa");
 		lb = new Libro[capacidad];
 
 	}
@@ -24,7 +25,7 @@ public class Libreria {
 	public void addLibro(String autor, String titulo, double precio) {
 		Libro lib = new Libro(autor,titulo,precio);
 		anyadirLibro(lib);
-		numLibs++;
+		
 	}
 
 	/**
@@ -39,20 +40,20 @@ public class Libreria {
 	 * 
 	 * @param lib sera el libro que queramos añadir
 	 */
-	private void anyadirLibro(Libro lib) {
+	protected void anyadirLibro(Libro lib) {
 		// TODO Auto-generated method stub
 		
 		int posicion = buscarLibro(lib.getAutor(), lib.getTitulo());
 		if(posicion == -1) {
 			if(numLibs == lb.length) {
 				lb = Arrays.copyOf(lb, lb.length*2);
-				lb[numLibs] = lib;
-			}else {
-				lb[numLibs] = lib;
 			}
+			lb[numLibs] = lib;
+			numLibs++;
 		}else {
 			lb[posicion] = lib;
 		}
+		
 		
 	}
 	
@@ -112,14 +113,17 @@ public class Libreria {
 	private int buscarLibro(String autor, String titulo) {
 		// TODO Auto-generated method stub
 		int esta = -1, contador = 0;
-		if(numLibs != 0)
-			for(Libro libro : lb) {
-				if( libro != null )
+		if(numLibs != 0) {
+		Libro libro = null;
+			while((contador < numLibs) && (esta == -1)){
+				libro = lb[contador];
 					if((libro.getAutor().equalsIgnoreCase(autor) && (libro.getTitulo().equalsIgnoreCase(titulo)))){
 						esta = contador;
+					}else {
+						contador++;
 					}
-				contador++;
 			}
+		}
 		return esta;
 	}
 	
@@ -146,11 +150,12 @@ public class Libreria {
 	}
 	
 	public String toString() {
+		int contador = 0;
 		StringBuilder sb = new StringBuilder();
 		sb.append("[");
-		for(Libro libro : lb) {
-			if( libro != null )
-			sb.append(libro.toString()+",\n");
+		while(contador < numLibs ) {
+			sb.append(lb[contador].toString() + ",\n");
+			contador++;
 		}
 		if(sb.length() > 2)sb.delete(sb.length()-2, sb.length());
 		sb.append("]");

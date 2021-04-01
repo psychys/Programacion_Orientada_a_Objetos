@@ -34,15 +34,15 @@ public class PruebaLibreria {
 		
 		//A continuacion mostramos el prcio final de los libros que nos indican en el enunciado
 		
-		System.out.println( "getPrecioFinal(George Orwell, 1984): " + lib.getPrecioFinal("George Orwell", "1984"));
-		System.out.println( "getPrecioFinal(Philip K. Dick, ¿Sueñan los androides con ovejas eléctricas?): " + lib.getPrecioFinal("Philip K. Dick", "¿Sueñan los androides con ovejas eléctricas?"));
-		System.out.println( "getPrecioFinal(isaac asimov, fundación e imperio): " + lib.getPrecioFinal("isaac asimov", "fundación e imperio"));
-		System.out.println( "getPrecioFinal(Ray Bradbury, Fahrenheit 451): " + lib.getPrecioFinal("Ray Bradbury", "Fahrenheit 451"));
-		System.out.println( "getPrecioFinal(Aldous Huxley, Un Mundo Feliz): " + lib.getPrecioFinal("Aldous Huxley", "Un Mundo Feliz"));
-		System.out.println( "getPrecioFinal(Isaac Asimov, La Fundación): " + lib.getPrecioFinal("Isaac Asimov", "La Fundación"));
-		System.out.println( "getPrecioFinal(william gibson, neuromante): " + lib.getPrecioFinal("william gibson", "neuromante"));
-		System.out.println( "getPrecioFinal(Isaac Asimov, Segunda Fundación): " + lib.getPrecioFinal("Isaac Asimov", "Segunda Fundación"));
-		System.out.println( "getPrecioFinal(Isaac Newton, Arithmetica Universalis): " + lib.getPrecioFinal("Isaac Newton", "Arithmetica Universalis") + "\n\n");
+		System.out.println( "PrecioFinal(George Orwell, 1984): " + lib.getPrecioFinal("George Orwell", "1984"));
+		System.out.println( "PrecioFinal(Philip K. Dick, ¿Sueñan los androides con ovejas eléctricas?): " + lib.getPrecioFinal("Philip K. Dick", "¿Sueñan los androides con ovejas eléctricas?"));
+		System.out.println( "PrecioFinal(isaac asimov, fundación e imperio): " + lib.getPrecioFinal("isaac asimov", "fundación e imperio"));
+		System.out.println( "PrecioFinal(Ray Bradbury, Fahrenheit 451): " + lib.getPrecioFinal("Ray Bradbury", "Fahrenheit 451"));
+		System.out.println( "PrecioFinal(Aldous Huxley, Un Mundo Feliz): " + lib.getPrecioFinal("Aldous Huxley", "Un Mundo Feliz"));
+		System.out.println( "PrecioFinal(Isaac Asimov, La Fundación): " + lib.getPrecioFinal("Isaac Asimov", "La Fundación"));
+		System.out.println( "PrecioFinal(william gibson, neuromante): " + lib.getPrecioFinal("william gibson", "neuromante"));
+		System.out.println( "PrecioFinal(Isaac Asimov, Segunda Fundación): " + lib.getPrecioFinal("Isaac Asimov", "Segunda Fundación"));
+		System.out.println( "PrecioFinal(Isaac Newton, Arithmetica Universalis): " + lib.getPrecioFinal("Isaac Newton", "Arithmetica Universalis") + "\n\n");
 		
 		
 		
